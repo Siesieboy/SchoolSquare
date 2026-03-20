@@ -119,9 +119,11 @@ html[data-theme="dark"] .bg-grid {
 .nav button.active { background: var(--accent); color: var(--white); border-color: var(--accent); box-shadow: var(--shadow); }
 html[data-theme="dark"] .nav button {
   border-color: rgba(243, 246, 251, 0.28);
+  color: var(--black);
 }
 html[data-theme="dark"] .nav button.active {
   color: #0b1220;
+  background-color: #ff8a6d;
 }
 
 .section { display: none; }
@@ -137,19 +139,24 @@ input, textarea {
   width: 100%; background: var(--panel) !important; color: var(--text) !important; 
   border: 1px solid rgba(18, 27, 42, 0.12); padding: 14px 15px; border-radius: 14px; margin-bottom: 12px; outline: none; font-size: 16px;
 }
+textarea {
+  border: 1px solid rgba(18, 27, 42, 0.2);
+}
 .btn-primary { background: var(--accent); color: var(--white); border: none; padding: 15px 18px; border-radius: 999px; font-weight: 700; cursor: pointer; width: 100%; font-size: 16px; box-shadow: var(--shadow); }
 html[data-theme="dark"] .card,
 html[data-theme="dark"] .stat-card,
 html[data-theme="dark"] input,
-html[data-theme="dark"] textarea {
-  border-color: rgba(243, 246, 251, 0.2);
+html[data-theme="dark"] textarea,
+html[data-theme="dark"] select {
+  border-color: rgba(243, 246, 251, 0.2) !important;
 }
 html[data-theme="dark"] input::placeholder,
 html[data-theme="dark"] textarea::placeholder {
-  color: rgba(230, 237, 247, 0.6);
+  color: rgba(247, 230, 230, 0.6);
 }
 html[data-theme="dark"] .btn-primary {
   color: #0b1220;
+  background-color: #ff8a6d;
 }
 
 /* ================= TOETSEN & GRID ================= */
@@ -184,6 +191,9 @@ html[data-theme="dark"] .toets-badge {
   color: var(--white);
   border-color: var(--accent);
   box-shadow: var(--shadow);
+}
+html[data-theme="dark"] .filter-btn.active { 
+  background-color: #ff8a6d;
 }
 html[data-theme="dark"] .filter-btn {
   border-color: rgba(243, 246, 251, 0.28);
